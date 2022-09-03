@@ -24,3 +24,8 @@ yarn-debug.log*
 yarn-error.log*
 
 testData.ts
+
+#deployment
+.firebaserc
+firebase.json
+/.firebase
