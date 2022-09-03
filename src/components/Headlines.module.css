@@ -1,0 +1,15 @@
+.title {
+    color: rgb(223, 223, 223);
+    font-weight:600;
+    font-size: 18px;
+}
+
+.dates {
+    color: rgb(168, 168, 168);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.headline {
+    margin-bottom: 40px;
+}

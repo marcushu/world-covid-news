@@ -1,0 +1,10 @@
+.chartcontainer {
+    background-color: white;
+    padding: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+    .chartcontainer {
+      padding: 15px
+    }
+  }

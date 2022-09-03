@@ -1,0 +1,41 @@
+.maincontainer {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0px 200px 100px;
+}
+
+.countrybutton {
+    background-color: #E85353;
+    color: white;
+    padding: 15px 5px 15px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.latest {
+    font-weight: bold;
+    font-size: 28px;
+    color: #676767;
+    background-color: #ffffffab;
+    width: fit-content;
+    padding: 5px;
+    margin: 15px 0px 15px 0px;
+}
+
+.tagline {
+    background-color: #484848;
+    color: #E1E1E1;
+    font-weight: lighter;
+    padding: 15px;
+    width: fit-content;
+    margin: 15px 0px 15px 0px;
+    max-width: 400px;
+}
+
+@media only screen and (max-width: 600px) {
+    .maincontainer {
+      padding: 20px;
+      text-align: center;
+    }
+  }

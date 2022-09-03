@@ -1,0 +1,15 @@
+.maindiv {
+    padding: 15px 20px 10px 20px;
+    text-align: end;
+}
+
+.gitimage {
+    width: 20px;
+    height: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .maindiv {
+        display: none;
+    }
+  }
