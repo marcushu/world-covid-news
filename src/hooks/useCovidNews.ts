@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import { NewsStory } from "../types";
 
-//import { newsData } from '../testData'  // TESTING
-
 const HOST = process.env.REACT_APP_API_HOST;
 const APIKEY = process.env.REACT_APP_API_KEY;
 
@@ -46,32 +44,7 @@ const useCovidNews = (countryCode: string) => {
       setnews([...withImages, ...noImages]);
     }
 
-
-    ////////////////////////////////////////////////TESTING
-    /*
-     const filterNews = (stories: typeof newsData) => {
-       const all = [] as NewsStory[]
- 
-       stories.news.forEach(_story => {
-         const story: NewsStory = {
-           date: (new Date(newsData.updatedDateTime)),
-           title: _story.title,
-           excerpt: _story.excerpt,
-           source: _story.provider.name,
-           url: _story.webUrl,
-           image: _story.images?.length ? _story.images[0].url : null
-         }
- 
-         all.push(story)
-       });
- 
-       setnews(all);
-     }
-     */
-    ///////////////////////////////////////////////TESTING
-
     fetchNews();
-    //filterNews(newsData); // TESTING
   }, [countryCode]);
 
   return news ? news : []
