@@ -6,7 +6,7 @@ const TopLine: FunctionComponent = () => {
   // TODO: add correct github link
   return (
     <div className={styles.maindiv}>
-      <a href="google.com" target='blank'>
+      <a href="https://github.com/marcushu/world-covid-news/tree/master" target='blank'>
         <img
           className={styles.gitimage}
           src={gitIcon} alt="git" />
