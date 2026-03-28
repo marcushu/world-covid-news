@@ -86,12 +86,16 @@ const CovidChart: FunctionComponent<CovidChartProps> = ({ stats }) => {
   };
 
   useEffect(() => {
-    setshowXlabels(window.matchMedia("(min-width: 600px)").matches)
+    const mediaQueryList =
+      typeof window !== 'undefined' && typeof (window as any).matchMedia === 'function'
+        ? (window as any).matchMedia("(min-width: 600px)")
+        : { matches: false };
 
+    setshowXlabels(mediaQueryList?.matches ?? false);
   }, []);
 
   return (
-    <div className={styles.chartcontainer}>
+    <div className={styles.chartcontainer} data-testid="bar-chart">
       <Bar options={options} data={data()} />
     </div>
   );
