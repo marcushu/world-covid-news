@@ -34,7 +34,7 @@ describe('NewsCard', () => {
   });
 
   it('renders generic image when story.image is missing', () => {
-    const storyWithoutImage = { ...baseStory, image: undefined } as NewsStory;
+    const storyWithoutImage = { ...baseStory, image: undefined } as unknown as NewsStory;
     render(<NewsCard story={storyWithoutImage} />);
 
     const image = screen.getByRole('img');
